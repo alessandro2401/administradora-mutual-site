@@ -1,0 +1,650 @@
+{
+  "total": 121,
+  "categorias": {
+    "grandes_grupos": {
+      "total": 25,
+      "empresas": [
+        {
+          "fip": "02852",
+          "nome": "AXA SEGUROS S.A.",
+          "cnpj": "19323190000106"
+        },
+        {
+          "fip": "03182",
+          "nome": "ITAU SEGUROS DE AUTO E RESIDÊNCIA S.A.",
+          "cnpj": "08816067000100"
+        },
+        {
+          "fip": "05070",
+          "nome": "ZURICH SANTANDER BRASIL SEGUROS E PREVIDÊNCIA S.A.",
+          "cnpj": "87376109000106"
+        },
+        {
+          "fip": "05177",
+          "nome": "ALLIANZ SEGUROS S.A.",
+          "cnpj": "61573796000166"
+        },
+        {
+          "fip": "05185",
+          "nome": "LIBERTY SEGUROS S.A.",
+          "cnpj": "61550141000172"
+        },
+        {
+          "fip": "05282",
+          "nome": "PRUDENTIAL DO BRASIL SEGUROS DE VIDA S.A.",
+          "cnpj": "33061813000140"
+        },
+        {
+          "fip": "05312",
+          "nome": "BRADESCO AUTO/RE COMPANHIA DE SEGUROS",
+          "cnpj": "92682038000100"
+        },
+        {
+          "fip": "05321",
+          "nome": "ITAU SEGUROS S.A.",
+          "cnpj": "61557039000107"
+        },
+        {
+          "fip": "05444",
+          "nome": "BRADESCO SEGUROS S.A",
+          "cnpj": "33055146000193"
+        },
+        {
+          "fip": "05495",
+          "nome": "ZURICH MINAS BRASIL SEGUROS S.A.",
+          "cnpj": "17197385000121"
+        },
+        {
+          "fip": "05631",
+          "nome": "CAIXA SEGURADORA S.A.",
+          "cnpj": "34020354000110"
+        },
+        {
+          "fip": "05886",
+          "nome": "PORTO SEGURO COMPANHIA DE SEGUROS GERAIS",
+          "cnpj": "61198164000160"
+        },
+        {
+          "fip": "05941",
+          "nome": "ZURICH BRASIL COMPANHIA DE SEGUROS",
+          "cnpj": "96348677000194"
+        },
+        {
+          "fip": "06033",
+          "nome": "PORTO SEGURO VIDA E PREVIDÊNCIA S/A.",
+          "cnpj": "58768284000140"
+        },
+        {
+          "fip": "06190",
+          "nome": "TOKIO MARINE SEGURADORA S.A.",
+          "cnpj": "33164021000100"
+        },
+        {
+          "fip": "06238",
+          "nome": "MAPFRE SEGUROS GERAIS S.A.",
+          "cnpj": "61074175000138"
+        },
+        {
+          "fip": "06564",
+          "nome": "ZURICH SANTANDER BRASIL SEGUROS S.A.",
+          "cnpj": "06136920000118"
+        },
+        {
+          "fip": "06696",
+          "nome": "AXA CORPORATE SOLUTIONS SEGUROS S.A.",
+          "cnpj": "33822131000103"
+        },
+        {
+          "fip": "06912",
+          "nome": "ITAUSEG SEGURADORA S.A.",
+          "cnpj": "29741030000130"
+        },
+        {
+          "fip": "40215",
+          "nome": "MAPFRE RE COMPAÑÍA DE REASEGUROS S.A.",
+          "cnpj": "05723617000159"
+        },
+        {
+          "fip": "03298",
+          "nome": "MAPFRE PREVIDÊNCIA S.A.",
+          "cnpj": "04046576000140"
+        },
+        {
+          "fip": "05096",
+          "nome": "ITAÚ VIDA E PREVIDÊNCIA S/A",
+          "cnpj": "92661388000190"
+        },
+        {
+          "fip": "06157",
+          "nome": "ZURICH BRASIL VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "01206480000104"
+        },
+        {
+          "fip": "06866",
+          "nome": "BRADESCO VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "51990695000137"
+        },
+        {
+          "fip": "08141",
+          "nome": "CAIXA VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "03730204000176"
+        }
+      ]
+    },
+    "internacionais": {
+      "total": 18,
+      "empresas": [
+        {
+          "fip": "01414",
+          "nome": "Berkley International do Brasil Seguros S/A",
+          "cnpj": "07021544000189"
+        },
+        {
+          "fip": "01431",
+          "nome": "XL Seguros Brasil S.A.",
+          "cnpj": "14448493000131"
+        },
+        {
+          "fip": "01571",
+          "nome": "HDI GLOBAL SEGUROS S.A.",
+          "cnpj": "18096627000153"
+        },
+        {
+          "fip": "02101",
+          "nome": "MONGERAL AEGON SEGUROS E PREVIDÊNCIA S. A.",
+          "cnpj": "33608308000173"
+        },
+        {
+          "fip": "02143",
+          "nome": "ASSURANT SEGURADORA S.A.",
+          "cnpj": "03823704000152"
+        },
+        {
+          "fip": "02933",
+          "nome": "CARDIF DO BRASIL SEGUROS E GARANTIAS S.A.",
+          "cnpj": "08279191000184"
+        },
+        {
+          "fip": "03328",
+          "nome": "Coface do Brasil Seguros de Crédito S/A",
+          "cnpj": "07644868000173"
+        },
+        {
+          "fip": "04669",
+          "nome": "FAIRFAX BRASIL SEGUROS CORPORATIVOS S.A.",
+          "cnpj": "10793428000192"
+        },
+        {
+          "fip": "04928",
+          "nome": "STARR INTERNATIONAL BRASIL SEGURADORA S.A.",
+          "cnpj": "17341270000169"
+        },
+        {
+          "fip": "05142",
+          "nome": "ICATU SEGUROS S.A",
+          "cnpj": "42283770000139"
+        },
+        {
+          "fip": "05720",
+          "nome": "SOMPO SEGUROS S.A.",
+          "cnpj": "61383493000180"
+        },
+        {
+          "fip": "05908",
+          "nome": "GENERALI  BRASIL  SEGUROS S.A.",
+          "cnpj": "33072307000157"
+        },
+        {
+          "fip": "05991",
+          "nome": "SWISS RE CORPORATE SOLUTIONS BRASIL SEGUROS S.A.",
+          "cnpj": "72145931000199"
+        },
+        {
+          "fip": "06513",
+          "nome": "CHUBB SEGUROS BRASIL S.A.",
+          "cnpj": "03502099000118"
+        },
+        {
+          "fip": "06572",
+          "nome": "HDI SEGUROS S.A.",
+          "cnpj": "29980158000157"
+        },
+        {
+          "fip": "06602",
+          "nome": "MITSUI SUMITOMO SEGUROS S.A.",
+          "cnpj": "33016221000107"
+        },
+        {
+          "fip": "08737",
+          "nome": "AIG SEGUROS BRASIL S.A.",
+          "cnpj": "33040981000150"
+        },
+        {
+          "fip": "06548",
+          "nome": "CARDIF DO BRASIL VIDA E PREVIDÊNCIA S/A",
+          "cnpj": "03546261000108"
+        }
+      ]
+    },
+    "vida_previdencia": {
+      "total": 23,
+      "empresas": [
+        {
+          "fip": "02801",
+          "nome": "UNIÃO SEGURADORA S.A. - VIDA E PREVIDÊNCIA (ATUAL DENOMINAÇÃO DE UNIÃO DE PREVIDÊNCIA S.A.)",
+          "cnpj": "95611141000157"
+        },
+        {
+          "fip": "03417",
+          "nome": "MG SEGUROS, VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "26136748000100"
+        },
+        {
+          "fip": "03654",
+          "nome": "SICOOB SEGURADORA DE VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "26314512000116"
+        },
+        {
+          "fip": "03794",
+          "nome": "PREVIMAX PREVIDÊNCIA PRIVADA E SEGURADORA S.A.",
+          "cnpj": "07163211000194"
+        },
+        {
+          "fip": "04251",
+          "nome": "CAPEMISA SEGURADORA DE VIDA E PREVIDÊNCIA S/A",
+          "cnpj": "08602745000132"
+        },
+        {
+          "fip": "04707",
+          "nome": "BRASILPREV SEGUROS E PREVIDÊNCIA S/A",
+          "cnpj": "27665207000131"
+        },
+        {
+          "fip": "05193",
+          "nome": "COMPANHIA DE SEGUROS PREVIDÊNCIA DO SUL - PREVISUL",
+          "cnpj": "92751213000173"
+        },
+        {
+          "fip": "06173",
+          "nome": "INVESTPREV SEGUROS E PREVIDÊNCIA S.A.",
+          "cnpj": "17479056000173"
+        },
+        {
+          "fip": "06220",
+          "nome": "SUL AMÉRICA SEGUROS DE PESSOAS E PREVIDÊNCIA S.A.",
+          "cnpj": "01704513000146"
+        },
+        {
+          "fip": "06301",
+          "nome": "RIO GRANDE SEGUROS E PREVIDÊNCIA S.A.",
+          "cnpj": "01582075000190"
+        },
+        {
+          "fip": "06351",
+          "nome": "METROPOLITAN LIFE SEGUROS E PREVIDÊNCIA PRIVADA S.A.",
+          "cnpj": "02102498000129"
+        },
+        {
+          "fip": "06831",
+          "nome": "SINAF PREVIDENCIAL CIA. DE SEGUROS",
+          "cnpj": "44019198000120"
+        },
+        {
+          "fip": "01619",
+          "nome": "DAYPREV VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "08872199000150"
+        },
+        {
+          "fip": "01937",
+          "nome": "COMPREV VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "33634999000180"
+        },
+        {
+          "fip": "02682",
+          "nome": "BTG Pactual Vida e Previdência S.A.",
+          "cnpj": "19449767000120"
+        },
+        {
+          "fip": "02895",
+          "nome": "ALFA PREVIDÊNCIA E VIDA S.A.",
+          "cnpj": "02713530000102"
+        },
+        {
+          "fip": "03140",
+          "nome": "PREVIMIL VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "95619003000114"
+        },
+        {
+          "fip": "04031",
+          "nome": "XP VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "29408732000105"
+        },
+        {
+          "fip": "06017",
+          "nome": "CENTAURO VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "42516278000166"
+        },
+        {
+          "fip": "09938",
+          "nome": "SAFRA VIDA E PREVIDÊNCIA S.A.",
+          "cnpj": "30902142000105"
+        },
+        {
+          "fip": "10031",
+          "nome": "VIVER PREVIDÊNCIA",
+          "cnpj": "33767492000102"
+        },
+        {
+          "fip": "10120",
+          "nome": "EQUATORIAL PREVIDÊNCIA COMPLEMENTAR",
+          "cnpj": "42150987000170"
+        },
+        {
+          "fip": "10413",
+          "nome": "FAMILIA BANDEIRANTE PREVIDÊNCIA PRIVADA",
+          "cnpj": "62874219000177"
+        }
+      ]
+    },
+    "seguros_gerais": {
+      "total": 46,
+      "empresas": [
+        {
+          "fip": "01007",
+          "nome": "SABEMI SEGURADORA S.A.",
+          "cnpj": "87163234000138"
+        },
+        {
+          "fip": "01490",
+          "nome": "Essor Seguros S.A",
+          "cnpj": "14525684000150"
+        },
+        {
+          "fip": "01627",
+          "nome": "SAFRA SEGUROS GERAIS S.A.",
+          "cnpj": "06109373000181"
+        },
+        {
+          "fip": "01741",
+          "nome": "BMG SEGUROS S.A.",
+          "cnpj": "19486258000178"
+        },
+        {
+          "fip": "02119",
+          "nome": "ARUANA SEGURADORA S. A.",
+          "cnpj": "07017295000158"
+        },
+        {
+          "fip": "02275",
+          "nome": "ALM SEGURADORA S.A - MICROSSEGURADORA",
+          "cnpj": "23694731000180"
+        },
+        {
+          "fip": "02305",
+          "nome": "BTG PACTUAL SEGUROS S.A.",
+          "cnpj": "32724962000180"
+        },
+        {
+          "fip": "02461",
+          "nome": "AUSTRAL SEGURADORA S.A.",
+          "cnpj": "11521976000126"
+        },
+        {
+          "fip": "02542",
+          "nome": "OMINT SEGUROS S.A.",
+          "cnpj": "20646890000110"
+        },
+        {
+          "fip": "02771",
+          "nome": "SUDASEG SEGURADORA DE DANOS E PESSOAS S.A. - MICROSSEGURADORA",
+          "cnpj": "32191644000109"
+        },
+        {
+          "fip": "02798",
+          "nome": "ARGO SEGUROS BRASIL S.A.",
+          "cnpj": "14868712000131"
+        },
+        {
+          "fip": "02879",
+          "nome": "COMPREV SEGURADORA S.A.",
+          "cnpj": "14333631000137"
+        },
+        {
+          "fip": "02950",
+          "nome": "SANCOR SEGUROS DO BRASIL S.A.",
+          "cnpj": "17643407000130"
+        },
+        {
+          "fip": "02968",
+          "nome": "GAZIN SEGUROS S.A.",
+          "cnpj": "28414401000107"
+        },
+        {
+          "fip": "03069",
+          "nome": "POTTENCIAL SEGURADORA S.A.",
+          "cnpj": "11699534000174"
+        },
+        {
+          "fip": "03271",
+          "nome": "SEGURADORA LÍDER DOS CONSÓRCIOS DO SEGURO DPVAT S.A.",
+          "cnpj": "09248608000104"
+        },
+        {
+          "fip": "03387",
+          "nome": "ANGELUS SEGUROS S.A.",
+          "cnpj": "18133809000157"
+        },
+        {
+          "fip": "03671",
+          "nome": "USEBENS SEGUROS S.A.",
+          "cnpj": "09180505000150"
+        },
+        {
+          "fip": "03727",
+          "nome": "TRAVELERS SEGUROS BRASIL S.A.",
+          "cnpj": "09064453000156"
+        },
+        {
+          "fip": "04111",
+          "nome": "JNS SEGURADORA S.A.",
+          "cnpj": "30862594000100"
+        },
+        {
+          "fip": "04359",
+          "nome": "EULER HERMES SEGUROS S.A.",
+          "cnpj": "04573811000132"
+        },
+        {
+          "fip": "04634",
+          "nome": "PATER SEGUROS S.A.",
+          "cnpj": "06068410000150"
+        },
+        {
+          "fip": "04715",
+          "nome": "CREFISA SEGUROS S.A. (atual denominação de BAMÉRCIO SEGUROS S.A.)",
+          "cnpj": "50662436000114"
+        },
+        {
+          "fip": "04782",
+          "nome": "MARKEL SEGURADORA DO BRASIL S.A.",
+          "cnpj": "26609195000165"
+        },
+        {
+          "fip": "04952",
+          "nome": "SUHAI SEGURADORA S.A.",
+          "cnpj": "16825255000123"
+        },
+        {
+          "fip": "05045",
+          "nome": "COMPANHIA DE SEGUROS ALIANÇA DA BAHIA",
+          "cnpj": "15144017000190"
+        },
+        {
+          "fip": "05118",
+          "nome": "SUL AMÉRICA CIA. NACIONAL DE SEGUROS",
+          "cnpj": "33041062000109"
+        },
+        {
+          "fip": "05274",
+          "nome": "BANESTES SEGUROS S.A.",
+          "cnpj": "27053230000175"
+        },
+        {
+          "fip": "05355",
+          "nome": "AZUL COMPANHIA DE SEGUROS GERAIS",
+          "cnpj": "33448150000111"
+        },
+        {
+          "fip": "05657",
+          "nome": "VANGUARDA COMPANHIA DE SEGUROS GERAIS",
+          "cnpj": "42582049000140"
+        },
+        {
+          "fip": "05690",
+          "nome": "Companhia Excelsior de Seguros",
+          "cnpj": "33054826000192"
+        },
+        {
+          "fip": "05819",
+          "nome": "AMERICAN LIFE COMPANHIA DE SEGUROS",
+          "cnpj": "67865360000127"
+        },
+        {
+          "fip": "05843",
+          "nome": "INDIANA SEGUROS S.A.",
+          "cnpj": "61100145000159"
+        },
+        {
+          "fip": "06084",
+          "nome": "MBM SEGURADORA S.A.",
+          "cnpj": "87883807000106"
+        },
+        {
+          "fip": "06122",
+          "nome": "FATOR SEGURADORA S.A.",
+          "cnpj": "33061862000183"
+        },
+        {
+          "fip": "06181",
+          "nome": "BRASILVEÍCULOS COMPANHIA DE SEGUROS",
+          "cnpj": "01356570000181"
+        },
+        {
+          "fip": "06211",
+          "nome": "ALIANÇA DO BRASIL SEGUROS S.A.",
+          "cnpj": "01378407000110"
+        },
+        {
+          "fip": "06360",
+          "nome": "KYOEI DO BRASIL COMPANHIA DE SEGUROS",
+          "cnpj": "61383576000170"
+        },
+        {
+          "fip": "06467",
+          "nome": "Alfa Seguradora S.A.",
+          "cnpj": "02713529000188"
+        },
+        {
+          "fip": "06530",
+          "nome": "VIRGINIA SURETY COMPANHIA DE SEGUROS DO BRASIL",
+          "cnpj": "03505295000146"
+        },
+        {
+          "fip": "06653",
+          "nome": "TOO SEGUROS S.A.",
+          "cnpj": "33245762000107"
+        },
+        {
+          "fip": "06688",
+          "nome": "COMPANHIA DE SEGUROS DO ESTADO DE SÃO PAULO - COSESP",
+          "cnpj": "62088042000183"
+        },
+        {
+          "fip": "06751",
+          "nome": "SEGUROS SURA S.A.",
+          "cnpj": "33065699000127"
+        },
+        {
+          "fip": "06785",
+          "nome": "BRASILSEG COMPANHIA DE SEGUROS",
+          "cnpj": "28196889000143"
+        },
+        {
+          "fip": "06793",
+          "nome": "Gente Seguradora S.A.",
+          "cnpj": "90180605000102"
+        },
+        {
+          "fip": "06921",
+          "nome": "INVESTPREV SEGURADORA S.A.",
+          "cnpj": "42366302000128"
+        }
+      ]
+    },
+    "especializadas": {
+      "total": 3,
+      "empresas": [
+        {
+          "fip": "02020",
+          "nome": "ATRADIUS CRÉDITO Y CAUCIÓN SEGURADORA S.A.",
+          "cnpj": "08587950000176"
+        },
+        {
+          "fip": "06335",
+          "nome": "SEGURADORA BRASILEIRA DE CRÉDITO À EXPORTAÇÃO S.A.",
+          "cnpj": "02166824000161"
+        },
+        {
+          "fip": "06998",
+          "nome": "CESCEBRASIL SEGUROS DE GARANTIAS E CRÉDITO S.A.",
+          "cnpj": "29959459000107"
+        }
+      ]
+    },
+    "saude": {
+      "total": 2,
+      "empresas": [
+        {
+          "fip": "01970",
+          "nome": "UNIMED SEGUROS PATRIMONIAIS S.A.",
+          "cnpj": "12973906000171"
+        },
+        {
+          "fip": "06947",
+          "nome": "UNIMED SEGURADORA S.A.",
+          "cnpj": "92863505000106"
+        }
+      ]
+    },
+    "microsseguradoras": {
+      "total": 1,
+      "empresas": [
+        {
+          "fip": "01554",
+          "nome": "EQUATORIAL SEGURADORA S/A - MICROSSEGUROS",
+          "cnpj": "21242451000105"
+        }
+      ]
+    },
+    "insurtechs": {
+      "total": 3,
+      "empresas": [
+        {
+          "fip": "01121",
+          "nome": "YOUSE SEGURADORA S.A.",
+          "cnpj": "24856160000103"
+        },
+        {
+          "fip": "02062",
+          "nome": "LUIZASEG SEGUROS S.A.",
+          "cnpj": "07746953000142"
+        },
+        {
+          "fip": "05436",
+          "nome": "JUNTO SEGUROS S.A.",
+          "cnpj": "84948157000133"
+        }
+      ]
+    }
+  }
+}
