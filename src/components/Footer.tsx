@@ -67,8 +67,6 @@ export default function Footer() {
             © {currentYear} Administradora Mutual. Todos os direitos reservados.
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            **TESTE DE AUTOMAÇÃO DE DOCUMENTAÇÃO: CONTEÚDO ATUALIZADO**
-            
             Seguradoras autorizadas pela SUSEP - Superintendência de Seguros Privados
           </p>
         </div>
