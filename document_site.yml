@@ -1,0 +1,50 @@
+name: Auto-Document Site Content
+
+on:
+  push:
+    branches:
+      - main # Executa sempre que houver um push para a branch principal
+
+jobs:
+  document_and_update_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Site Repository
+        uses: actions/checkout@v4
+        with:
+          repository: alessandro2401/administradora-mutual-site # Repositório do site
+          token: ${{ secrets.GITHUB_TOKEN }} # Token padrão do GitHub Actions
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests beautifulsoup4 markdownify
+
+      - name: Run Content Extraction Script
+        run: python extract_content.py
+
+      - name: Commit and Push to Docs Repository
+        uses: actions/checkout@v4
+        with:
+          repository: alessandro2401/docs-administradora # Repositório de documentação
+          path: docs-repo
+          token: ${{ secrets.DOCS_REPO_TOKEN }} # Token com permissão de escrita no repositório do Docs
+
+      - name: Copy Generated Documentation
+        run: |
+          cp temp_institucional_doc.md docs-repo/docs/sites-publicos/institucional-auto.md
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: docs-repo
+          commit_message: 'docs(auto): Atualização automática do conteúdo do Site Institucional'
+          branch: main
+          file_pattern: docs/sites-publicos/institucional-auto.md
+          commit_user_name: Manus AI Documentation Bot
+          commit_user_email: manus-ai-bot@administradoramutual.com.br
+          commit_author: Manus AI Documentation Bot <manus-ai-bot@administradoramutual.com.br>
