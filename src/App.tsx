@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Legislacao from "./pages/Legislacao";
 import Seguradoras from "./pages/Seguradoras";
 import Mutualismo from "./pages/Mutualismo";
+import AuthGate from "./components/AuthGate";
 
 function Router() {
   return (
@@ -29,13 +30,15 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <div className="min-h-screen flex flex-col">
-            <Navigation />
-            <main className="flex-1">
-              <Router />
-            </main>
-            <Footer />
-          </div>
+          <AuthGate>
+            <div className="min-h-screen flex flex-col">
+              <Navigation />
+              <main className="flex-1">
+                <Router />
+              </main>
+              <Footer />
+            </div>
+          </AuthGate>
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
@@ -44,4 +47,3 @@ function App() {
 }
 
 export default App;
-
