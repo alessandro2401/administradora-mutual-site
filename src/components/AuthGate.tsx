@@ -1,12 +1,7 @@
 import { useState, useEffect, type ReactNode } from "react";
 
 const VALID_USERS = [
-  { email: "presidencia@administradoramutual.com.br", password: "1234567890" },
-  { email: "diretoria@administradoramutual.com.br", password: "1234567890" },
-  { email: "comercial@administradoramutual.com.br", password: "1234567890" },
-  { email: "sinistro@administradoramutual.com.br", password: "1234567890" },
-  { email: "adm@administradoramutual.com.br", password: "1234567890" },
-  { email: "alpha@administradoramutual.com.br", password: "1234567890" },
+  { email: "moderador@grupommb.com", password: "Sou@2026br" },
 ];
 const AUTH_KEY = "admin_mutual_auth";
 const AUTH_EXPIRY_KEY = "admin_mutual_auth_expiry";
