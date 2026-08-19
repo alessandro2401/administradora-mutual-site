@@ -1,32 +1,4 @@
-import { useState, useEffect, type ReactNode } from "react";
-
-const VALID_USERS = [
-  { email: "moderador@grupommb.com", password: "Sou@2026br" },
-];
-const AUTH_KEY = "admin_mutual_auth";
-const AUTH_EXPIRY_KEY = "admin_mutual_auth_expiry";
-const SESSION_HOURS = 24;
-
-function isAuthenticated(): boolean {
-  const auth = localStorage.getItem(AUTH_KEY);
-  const expiry = localStorage.getItem(AUTH_EXPIRY_KEY);
-  if (auth === "true" && expiry) {
-    const expiryDate = new Date(expiry);
-    if (expiryDate > new Date()) {
-      return true;
-    }
-    localStorage.removeItem(AUTH_KEY);
-    localStorage.removeItem(AUTH_EXPIRY_KEY);
-  }
-  return false;
-}
-
-function setAuthenticated(): void {
-  const expiry = new Date();
-  expiry.setHours(expiry.getHours() + SESSION_HOURS);
-  localStorage.setItem(AUTH_KEY, "true");
-  localStorage.setItem(AUTH_EXPIRY_KEY, expiry.toISOString());
-}
+import React, { useState, useEffect, ReactNode } from "react";
 
 interface AuthGateProps {
   children: ReactNode;
@@ -41,39 +13,88 @@ export default function AuthGate({ children }: AuthGateProps) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setAuthed(isAuthenticated());
-    setChecking(false);
+    // Verificar sessão no servidor
+    fetch('/api/auth/me')
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        throw new Error('Não autenticado');
+      })
+      .then((data) => {
+        if (data.authenticated) {
+          setAuthed(true);
+        }
+      })
+      .catch(() => {
+        setAuthed(false);
+      })
+      .finally(() => {
+        setChecking(false);
+      });
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError("");
 
-    setTimeout(() => {
-      const found = VALID_USERS.find(
-        (u) => u.email.toLowerCase() === email.toLowerCase() && u.password === password
-      );
-      if (found) {
-        setAuthenticated();
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setAuthed(true);
       } else {
-        setError("E-mail ou senha inválidos.");
+        setError(data.error || "E-mail ou senha inválidos.");
       }
+    } catch (err) {
+      setError("Erro de conexão com o servidor de autenticação.");
+    } finally {
       setLoading(false);
-    }, 500);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST' });
+    } catch (e) {
+      // ignorar
+    }
+    setAuthed(false);
   };
 
   if (checking) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
-        <div className="animate-pulse text-white text-lg">Carregando...</div>
+        <div className="animate-pulse text-white text-lg">Verificando segurança da sessão...</div>
       </div>
     );
   }
 
   if (authed) {
-    return <>{children}</>;
+    return (
+      <div className="relative">
+        <div className="absolute top-4 right-4 z-50">
+          <button
+            onClick={handleLogout}
+            className="px-3 py-1.5 bg-red-600/80 hover:bg-red-600 text-white text-xs font-medium rounded-md shadow transition-colors flex items-center gap-1.5"
+            title="Encerrar sessão segura"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            Sair
+          </button>
+        </div>
+        {children}
+      </div>
+    );
   }
 
   return (
@@ -90,7 +111,7 @@ export default function AuthGate({ children }: AuthGateProps) {
               Administradora Mutual
             </h1>
             <p className="text-sm text-white/60">
-              Acesso restrito. Informe suas credenciais.
+              Acesso restrito. Servidor seguro autenticado.
             </p>
           </div>
 
@@ -142,10 +163,10 @@ export default function AuthGate({ children }: AuthGateProps) {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                   </svg>
-                  Verificando...
+                  Autenticando...
                 </span>
               ) : (
-                "Entrar"
+                "Entrar com Segurança"
               )}
             </button>
           </form>
